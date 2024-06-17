@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/livecanvas-team/ninjabootstrap/dist/css/bootstrap.min.css" media="all">
+        <script src="https://kit.fontawesome.com/528f354b3f.js" crossorigin="anonymous"></script>
+        <!-- http://getbootstrap.com/docs/5.1/ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+        <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+        <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+        <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <title>WOMENHOOD {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+<!--front page have animated scrooling scrools-->
+<!--content : name of webbapp, goal, function, then welcome scroll-->
+
+<div class="topnav" id="myTopnav">
+    <a href="/" class="active" data-toggle="tooltip" title="Home Page">    <img src="static/images/logo2-removebg-preview.png" alt="CSS Pro logo" class="logo-img" style="width:50px;height:70;"> Womenhood</a>
+    {% if session["user_id"] %}
+    <a href="/track" data-toggle="tooltip" title="Track">Track </a>
+    <a href="/profile" data-toggle="tooltip" title="Profile">Profile</a>
+
+  
+
+    <a href="/logout" data-toggle="tooltip" title="Log out"><i class="fa-solid fa-right-from-bracket fa-beat fa-2xl" style="color: #1b1b1b;"></i></a>
+    {% else %}
+    <a href="#about" data-toggle="tooltip" title="About Us">About US</a>
+    <a href="/login" data-toggle="tooltip" title="Login"><i class="fa-solid fa-right-to-bracket fa-beat fa-2xl" style="color: #1b1b1b;"></i></a>
+    {% endif %}
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+
+        {% if get_flashed_messages() %}
+        <header>
+            <div class="alert alert-primary mb-0 text-center" role="alert">
+                {{ get_flashed_messages() | join(" ") }}
+            </div>
+        </header>
+        {% endif %}
+
+        <main class="container-fluid py-5 text-center">
+            {% block main %}{% endblock %}
+        </main>
+
+
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
+
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <img class="mb-4" src="static/images/icon2-removebg-preview.png" alt="" width="50" height="50">
+
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+          </footer>
+        </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+    </body>
+
+</html>

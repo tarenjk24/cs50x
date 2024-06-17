@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" type="text/css" href="/static/profile.css">
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+     <div class="col-md-7">
+      <div class="card p-3 py-4">
+       <div class="text-center mt-3">
+        <h5 class="mt-2 mb-0"> Personal Information </h5>
+        <p class="mt-2 mb-0">
+         <strong>Username:</strong> {{ user_data["username"] }}
+        </p>
+        <p class="mt-2 mb-0">
+         <strong>task completed:</strong> {{ user_data["tasks_completed"] }}
+        </p> {% for task in tasks %}
+        <ul class="task-list">
+         <li>{{ task.task }}</li>
+        </ul>
+        {% endfor %}
+         <div class="buttons">
+         <button class="btn btn-outline-primary px-4">
+          <a href="/remove">Remove Account</a>
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+    {% endblock %}

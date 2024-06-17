@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    login
+{% endblock %}
+
+{% block main %}
+<!-- Form for user login -->
+<link rel="stylesheet" type="text/css" href="/static/form.css">
+
+    <!-- Bootstrap core CSS -->
+    <form action="/login" method="post"  class="form-signin">
+      <img class="mb-4" src="static/images/icon2-removebg-preview.png" alt="" width="200" height="200">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+                    <input type="username" id="inputEmail" class="form-control" placeholder="Username " required autofocus  name="username">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password">
+
+                    <div class="checkbox mb-3">
+                      <label>
+                        <a href="/register">No account? Create one!</a>
+                      </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+
+                </form>
+
+
+{% endblock %}

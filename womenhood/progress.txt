@@ -1,0 +1,10 @@
+2.index: hero feature slide picture with content of app
+     * tracking of prayers
+     * to do list
+     * subscribing to mail for religouis topics
+
+
+3.aboutus
+DONE:
+registering tmeplates: just make sure that is the box color u want.
+track : clean the icons and placing

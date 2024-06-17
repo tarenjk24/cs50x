@@ -1,0 +1,53 @@
+button,
+input[type="submit"] {
+  background-color: #d9edff;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  vertical-align: middle;
+}
+
+input[type="text"] {
+  border-radius: 8px;
+  border: 2px solid #000000;
+  line-height: 1.8;
+  width: 25%;
+}
+
+input[type="text"]:hover {
+  background-color: #f5f5f5;
+  transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+#correct {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    7px 10px 40px 7px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 10px 13px -7px #000000, 7px 10px 40px 7px rgba(0, 0, 0, 0.23);
+}
+.incorrect{
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    7px 10px 40px 7px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 10px 13px -7px #000000, 7px 10px 40px 7px rgba(0, 0, 0, 0.23);
+}
+#check {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    7px 10px 40px 7px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 10px 13px -7px #000000, 7px 10px 40px 7px rgba(0, 0, 0, 0.23);
+}
+#Font {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+#contFont {
+  font-family: "Times New Roman", Times, serif;
+  word-spacing: 2px;
+}
+

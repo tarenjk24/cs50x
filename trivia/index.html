@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+        <link rel=”stylesheet” href=”css/bootstrap.css”>
+        <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script src="trivia.js"></script>
+
+        </head>
+    <body>
+
+        <div class="row" id="Font">
+            <h1>Trivia!</h1>
+        </div>
+        <nav class=”navbar fixed-top navbar-expand-md navbar-light bg-light”>
+        <div class="container" id="contFont">
+            <div class="col-md">
+                <h2>Part 1: Multiple Choice </h2>
+                <h3>Who wrote "To Kill a Mockingbird"?</h3>
+                <button  type="button"  class="incorrect" data-toggle=”collapse” data-target=”#navbarCollapse” aria-controls=”navbarCollapse” aria-expanded=”false” aria-label=”Toggle navigation” >Jane Austin</button>
+                <span class=”navbar-toggler-icon”></span>
+                <button id="correct" type="button" data-toggle=”collapse” data-target=”#navbarCollapse” aria-controls=”navbarCollapse” aria-expanded=”false” aria-label=”Toggle navigation”>Harper Lee</button>
+                <span class=”navbar-toggler-icon”></span>
+                <button   type="button" class="incorrect" data-toggle=”collapse” data-target=”#navbarCollapse” aria-controls=”navbarCollapse” aria-expanded=”false” aria-label=”Toggle navigation”>Frank McCourt</button>
+                <span class=”navbar-toggler-icon”></span>
+                <button type="button" class="incorrect" data-toggle=”collapse” data-target=”#navbarCollapse” aria-controls=”navbarCollapse” aria-expanded=”false” aria-label=”Toggle navigation”>William Golding</button>
+                <span class=”navbar-toggler-icon”></span>
+                <p id ="correction"></p>
+            </div>
+
+            <div class="col-md">
+                <h2>Part 2: Free Response</h2>
+                <h3>In the book "Pride and Prejudice," who is Elizabeth Bennet in love with?</h3>
+                <form>
+                <p><input type="text" placeholder="He is lord of Pemberley"><br></p>
+                <p><button  id="check" data-toggle=”collapse” data-target=”#navbarCollapse” aria-controls=”navbarCollapse” aria-expanded=”false” aria-label=”Toggle navigation”>Check Answer</button></p>
+                <span class=”navbar-toggler-icon”></span>
+                <p id ="correction1"></p>
+                </form>
+            </div>
+        </div>
+    </nav>
+    </body>
+</html>

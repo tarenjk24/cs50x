@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+{% block title %}
+track
+{% endblock %}
+{% block main %}
+<link rel="stylesheet" type="text/css" href="/static/track.css">
+<!-- to do -->
+
+<div class="container mt-5">
+ <div class="row d-flex justify-content-center">
+  <div class="col-md-7">
+   <div class="card p-3 py-4">
+    <div class="text-center mt-3">
+     <h5 class="mt-2 mb-0"> Your to do list </h5>
+     <p class="mt-2 mb-0">
+     <form method="POST" action="/todo">
+      <div class="add-task">
+       <input type="text" autocomplete="off" placeholder="Add New Task" class="task-input" name="task">
+       <input type="text" autocomplete="off" placeholder="Task Importance" class="task-input" name="category">
+       <input type="submit" class="submit-task">
+      </div>
+     </form>
+     </p>
+     <p class="mt-2 mb-0">
+      <strong>Tasks :</strong>
+     </p>
+     {% for todo in todos %}
+      <ul class="task-list">
+      <li>
+       {{ todo.task }} / / <strong>{{ todo.category }}</strong>
+       <a class="delete-btn" href="delete/{{ todo.id }}"></a>
+      </li>
+     </ul>
+     {% endfor %}
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- tracker -->
+<div class="container mt-5">
+ <div class="row d-flex justify-content-center">
+  <div class="col-md-7">
+   <div class="card p-3 py-4">
+    <div class="text-center mt-3">
+     <h5 class="mt-2 mb-0"> Your Fasting tracker: </h5>
+     <label for="reptition" class="label"> update: </label>
+     <p class="mt-2 mb-0">
+      <strong>{{ details.not_done }} </strong>
+     <form method="POST" action="/total">
+
+      <div class="add-task">
+
+       <input type="number"  name="not_done"  class="task-input" min="1" required placeholder="0">
+       <input type="submit" class="submit-task">
+      </div>
+     </form>
+     </p>
+     <p class="mt-2 mb-0">
+      <span class="inputf">
+       <label for="username" class="label"> you finished {{ details.done }} amount of prayers and have {{ details.not_done }}to go. </label>
+      </span>
+     </p>
+     <p class="mt-2 mb-0">
+     <form method="POST" action="/add">
+      <div class="add-task">
+       <label for="minus" class="label"> The number of prayers day completed: </label>
+       <h1>{{ details.done }}</h1>
+       <label for="minus" class="label"> update: </label>
+       <input type="number" id="total_minus" name="total_minus" class="form-control" min="1" required placeholder="0">
+       <input type="submit" class="submit-task">
+      </div>
+     </form>
+     </p>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+{% endblock %}
+
