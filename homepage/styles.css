@@ -1,0 +1,25 @@
+.bg-1 {
+    color: black;
+    font-family: "Tangerine", serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    letter-spacing: 3px;
+  }
+  .row {
+    color: black;
+    font: 20px "Montserrat";
+    line-height: 1.8;
+    color: #f5f6f7;
+    letter-spacing: 1px;
+    column-rule: 4px double #ff00ff;
+    border-style: groove;
+  }
+  .col-sm-4 {
+    border-style: groove;
+    color: black;
+  }
+
+  .container-fluid {
+    padding-top: 106px;
+    padding-bottom: 107px;
+  }

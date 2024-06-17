@@ -1,0 +1,10 @@
+SELECT *
+FROM users;
+SELECT *
+FROM products;
+SELECT *
+FROM cart;
+SELECT *
+FROM orders;
+SELECT *
+FROM Mail;

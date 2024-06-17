@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <!-- Include the external stylesheet -->
+    <link href="/static/products.css" rel="stylesheet">
+
+    <!-- Products Section -->
+    <section id="product1" class="section-p2">
+        <!-- Container for the entire section -->
+        <div class="area">
+            <!-- Title for the section -->
+            <div class="title-1">Catalog</div>
+
+            <!-- Container for product items -->
+            <div class="pro-container">
+                <div class="part">
+                    <!-- List of products in a row -->
+                    <ul class="row">
+                        <!-- Product 1 -->
+                        <li class="col-xs-6 col-md-3">
+                            <div class="pro">
+                                <a href="/products" class="nav-link">
+                                    <img src="/static/img/products/bic.jpg" alt="School Supplies">
+                                    <span>School Supplies</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- Product 2 -->
+                        <li class="col-xs-6 col-md-3">
+                            <div class="pro">
+                                <a href="/curriculums" class="nav-link">
+                                    <img src="/static/img/products/curriculum.png" alt="Curriculum Books">
+                                    <span>Curriculum Books</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- Product 3 -->
+                        <li class="col-xs-6 col-md-3">
+                            <div class="pro">
+                                <a href="/grades" class="nav-link">
+                                    <img src="/static/img/products/grades.png" alt="School Books">
+                                    <span>Grade Books</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- Product 4 -->
+                        <li class="col-xs-6 col-md-3">
+                            <div class="pro">
+                              <a href="/novel" class="nav-link">
+                                <img src="/static/img/products/sputnik sweetheart .jpg" alt="novel">
+                                <span>Novels</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,79 @@
+/* Center the content horizontally and vertically */
+.center {
+    width: 100%;
+    height: 500%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+/* Styling for the main area */
+.area {
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+/* Styling for the centered section */
+.left {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Styling for paragraphs within the info section */
+.info p {
+    color: black;
+}
+
+th{
+    color: black;
+}
+
+/* Styling for the info section */
+.info {
+    font-size: 13px;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 16px;
+    margin: 0 auto;
+    padding: 30px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Styling for links within the info section */
+.info a {
+    color: #213999;
+    font-weight: 500;
+    transition: color 0.2s, transform 0.2s;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    text-align: right;
+}
+a:hover {
+    color: #330404;
+}
+
+/* Styling for image */
+.info img{
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 25vh;
+    padding: 10px 15px;
+    border: 1px solid white;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+}
+

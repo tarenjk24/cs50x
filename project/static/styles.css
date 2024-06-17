@@ -1,0 +1,428 @@
+/* Global Styles */
+body {
+  height: fit-content;
+ 
+  font-size: 18px;
+  margin: 6em 0;
+  max-width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header Styles */
+.bar {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: 18px;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0.9rem 2rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: all 500ms;
+  width: 100%;
+  z-index: 99;
+  backdrop-filter: blur(3px);
+}
+.navbar {
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  text-align: center;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  padding: 5px 20px 10px;
+}
+.navbar ul .edge {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0 0 0 20px;
+  margin: 0 0 0 200px;
+  text-align: center;
+  float: right;
+}
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+}
+.navbar li a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  transition: 0.3 ease;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+
+/* CSS Button*/
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+}
+.button-52:after {
+  content: "";
+  background-color: black;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+
+
+/* Hero Section Styles */
+#hero {
+  background-image: url("img/hero.png");
+  height: 50vh;
+  width: 100%;
+  background-position: top 30% right 9%;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+
+
+/* Features Section Styles */
+.stack-area {
+  width: 100%;
+  height: 300vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.right,
+.left {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  flex-basis: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-image: conic-gradient(
+    from 90deg at 80% 50%,
+    #c0c0cb 0%,
+    rgb(239, 253, 255, 0.8) 100%
+  ),
+  conic-gradient(from 270deg at 20% 50%, rgb(239, 253, 255, 0.8), #83838b);
+}
+.cards {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: conic-gradient(
+    from 90deg at 80% 50%,
+    #bba7a7 0%,
+    rgb(239, 253, 255, 0.8) 100%
+  ),
+  conic-gradient(from 270deg at 20% 50%, rgb(239, 253, 255, 0.8), #4d3d3d);
+}
+.card {
+  width: 350px;
+  height: 310px;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius: 1mm;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card:nth-child(1) {
+  background: #1c1515;
+  z-index: 4;
+}
+.card:nth-child(2) {
+  background: rgb(39, 21, 21);
+  z-index: 3;
+}
+.card:nth-child(3) {
+  background: rgb(64, 50, 50);
+  z-index: 2;
+}
+.card:nth-child(4) {
+  background: rgb(109, 89, 89);
+  z-index: 1;
+}
+.sub {
+  font-family: poppins;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  color: white;
+}
+.content {
+  font-family: poppins;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+}
+.card.active {
+  transform-origin: bottom left;
+}
+.left {
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  width: 420px;
+  font-size: 88px;
+  font-family: poppins;
+  font-weight: 600;
+  line-height: 88px;
+  color: black;
+  max-width: 800px;
+  text-align: right;
+  margin: 0 1px 0 99px;
+  padding: 0 99px 30px 0;
+
+}
+.sub-title {
+  text-align: left;
+  width: 420px;
+  font-weight: 100;
+  font-family: poppins;
+  font-size: 15px;
+  margin: 10px 20px 10px 0;
+  padding: 10px 100px 10px 100px;
+}
+.sub-title button {
+  font-family: poppins;
+  font-size: 14px;
+  padding: 15px 30px;
+  background: black;
+  color: white;
+  border-radius: 8mm;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.top,
+.bottom {
+  width: 100%;
+  height: 100vh;
+  font-family: poppins;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Slides Section Styles */
+.slides {
+  margin: 50px;
+  padding: 50px;
+}
+.mySlides {
+  padding: 15px 20px;
+  transition: 0.3 ease;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vertical-line {
+  border-left: 2px solid #000;
+  height: 400px;
+  margin-left: 70px;
+  margin-top: 600px;
+}
+.center {
+  background-image: linear-gradient(transparent 79%, transparent 100%),
+    linear-gradient(white 0, transparent 21%),
+    linear-gradient(75deg, white 0, rgba(0, 0, 0, 0.19) 46.5%, white 100%);
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Container Styles for (terms and condition, delivery information, about us, privacy policy) */
+.container {
+  background-image: conic-gradient(
+    from 90deg at 80% 50%,
+    #bba7a7 0%,
+    rgb(239, 253, 255, 0.8) 100%
+  ),
+  conic-gradient(from 270deg at 20% 50%, rgb(239, 253, 255, 0.8), #4d3d3d);
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0 0 0 1px inset;
+  flex-direction: column;
+  font-size: 18px;
+  padding: 32px;
+  text-align: center;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* Newsletter Section Styles */
+.newsletter {
+  background: black;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-position: 20% 30%;
+  width: 100%;
+  height: 20vh;
+}
+.newsletter h4{
+  color: white;
+}
+.newsletter p{
+  color: white;
+}
+.newsletter .form {
+  display: flex;
+  width: 80%;
+}
+.newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.newsletter button {
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  color: #333333;
+  font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto,
+    sans-serif;
+  font-size: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  color: black;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  margin: 0 0 20px 0;
+}
+footer a {
+  font-size: 13px;
+  color: black;
+  margin-bottom: 10px;
+  padding: 5px;
+  margin-top: 3px;
+  text-decoration: none;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .follow i {
+  color: white;
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .install .row img {
+  border: 1px solid;
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 10px 0 15px 0;
+  height: auto;
+  border: 1px solid;
+  border-radius: 6px;
+}
+footer .follow i:hover,
+footer a:hover {
+  color: grey;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}

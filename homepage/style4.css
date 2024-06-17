@@ -1,0 +1,18 @@
+.list{
+    color:white;
+    word-spacing: 4px;
+    margin: 20px;
+    letter-spacing: 0.5px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+.col{
+    letter-spacing: 0.5px;
+    font-family: "Times New Roman", Times, serif;
+    shadow min-vh-90 py-1
+}
+
+
