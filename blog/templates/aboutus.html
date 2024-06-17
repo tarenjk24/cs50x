@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    aboutus
+{% endblock %}
+
+{% block main %}
+<link href="/static/aboutus.css" rel="stylesheet">
+
+<div class="body">
+
+  <div class="about-section">
+    <h1>About Us Page</h1>
+   <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div>
+
+  <h2 style="text-align:center">content</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>youtube</h2>
+          <p class="title">check now !</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+          <p><button class="button"> click here</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Galerie</h2>
+          <p class="title">check now!</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+          <p><button class="button">click here!</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Articles</h2>
+          <p class="title">check now!</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+
+          <p><button class="button">click here!</button></p>
+        </div>
+      </div>
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Check out!</li>
+    <li class="list-group-item"> privacy policy</li>
+    <li class="list-group-item">terms and condition</li>
+ 
+  </ul>
+  </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+<link href="/static/form.css" rel="stylesheet">
+
+<div class="login-box">
+    <h2>Login</h2>
+    <form action="/login" method="post"  class="form-signin">
+        <div class="user-box">
+        <input type="text" name="username" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" required name="password">
+        <label>Password</label>
+      </div>
+      <div class="checkbox mb-3">
+
+          <a href="/register">No account? Create one!</a>
+
+      </div>
+      <button class="botn btn-lg btn-primary btn-block" type="submit">Log in</button>
+
+    </form>
+
+  </div>
+
+{% endblock %}
+
+

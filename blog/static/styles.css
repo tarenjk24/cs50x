@@ -1,0 +1,285 @@
+/* Global Styles */
+
+
+body {
+    font-family: "Kalnia", serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      height: 100vh;
+      margin: 0;
+      background-size: 200% 300%;
+      background-image: linear-gradient(90deg, rgba(15, 23, 42, 1) 0%, rgb(88, 28, 135) 50%, rgb(15, 23, 42) 100%);
+    }
+
+/* hero start */
+.flash-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    line-height: 1.7;
+    overflow-x: hidden;
+    background-size: 200% 300%;
+    animation: gradient 7s ease infinite;
+    background-image: linear-gradient(115deg, #92F2F2 0%, #A8D0F0 0%, #D3CFF1 7.2%, #EED5F2 20%, #F0C7A8 27.9%, #D6CFF1 34.6%, #A8D0F0 38.1%, #C2DCF2 44.6%, #FBC0EF 51.1%, #F0A8BE 70%, #F0C0A8 85.1%);
+}
+.flashy-hi {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+  }
+
+  .flashy-hi span {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+
+  .message {
+    background-color: yellow;
+    color: #333;
+    display: block;
+    font-weight: 900;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 270px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+
+  .word1, .word2, .word3 {
+    font-family: tahoma;
+  }
+
+  /* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .flashy-hi {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    .flashy-hi span {
+        font-size: 30px; /* Adjust span font size for smaller screens */
+    }
+    .message {
+        top: 2rem;
+        left: 10px; /* Adjust position for smaller screens */
+    }
+}
+
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 300px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 300px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+
+    }
+    48% {
+      top: -4.5rem;
+      width: 300px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 300px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+        top: -9rem;
+        width: 0;
+        text-indent: 0px;
+      }
+      86% {
+        top: -9rem;
+        width: 300px;
+      }
+      95% {
+        top: -9rem;
+        width: 300px;
+      }
+      98% {
+        top: -9rem;
+        width: 0;
+        text-indent: 0px;
+      }
+      100% {
+        top: 0;
+        width: 0;
+        text-indent: 0;
+      }
+    }
+
+@keyframes gradient {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+}
+
+/* hero end */
+
+
+/* side bar css start */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    background-color: #0f172a;;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b39eb5 ;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #444;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 10px ;
+    border: none;
+    border-radius: 100%;
+}
+.closebtn:hover {
+    background-color: #444;
+    border-radius: 1px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px ;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(15, 23, 42);
+
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* side bar css end*/
+
+/* nav bar start */
+.topnav {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    overflow: hidden;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav a.active {
+    color: white;
+    font-size: 36px;
+}
+
+.topnav-centered a {
+    float: right;
+    font-family: "Audiowide", cursive;
+}
+
+.topnav-right {
+    float: right;
+}
+@media screen and (max-width: 600px) {
+}
+/* nav bar end */
+/* logo */
+.logo-img{
+    width: 90px;  /* Adjust as needed */
+    height: 90px;
+}
+/* footer */
+.p-3{
+    background-image: linear-gradient(90deg, rgba(15, 23, 42, 1) 0%, rgb(88, 28, 135) 50%, rgb(88, 28, 135)100%);
+    background-position:  left bottom;
+    transition: background 500ms, outline 500ms;
+    background-position: top left;
+    border-top: 1px solid rgb(88, 28, 135);
+
+}
+
+.radial-text-gradient {
+    position: relative;
+    padding-bottom: 0.5em;
+    background: radial-gradient(circle, #a2a2d0 , white );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+  }
+/* footer end */

@@ -1,0 +1,231 @@
+/* main section */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kalnia", serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  height: 100vh;
+  margin: 0;
+  background-size: 200% 300%;
+  background-image: radial-gradient(
+    82% 81% at 9% 28%,
+    #2f0c51 13.5%,
+    #955ccb 32.3%,
+    #621fa3 55.3%,
+    #621fa3 77.7%,
+    #310e53 77.7%,
+    #8e58ff 100%
+  );
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 300px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 300px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 0px;
+  }
+  86% {
+    top: -9rem;
+    width: 300px;
+  }
+  95% {
+    top: -9rem;
+    width: 300px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 0px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+}
+
+/* navbar section */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  background-color: #0f172a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #b39eb5;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #444;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 100%;
+}
+.closebtn:hover {
+  background-color: #444;
+  border-radius: 1px;
+}
+.openbtn {
+  cursor: pointer;
+  padding: 15px;
+
+  border-radius: 100%;
+  background-color: #2f0c51;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+.topnav {
+  top: 0; /* Position the navbar at the top of the page */
+  overflow: hidden;
+  width: 100%;
+}
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  color: black;
+}
+.topnav a.active {
+  color: white;
+  font-size: 36px;
+}
+.topnav-centered a {
+  float: right;
+  font-family: "Audiowide", cursive;
+}
+.topnav-right {
+  float: right;
+}
+
+/* logo */
+.logo-img {
+  width: 100px; /* Adjust as needed */
+  height: 10vh; /* Maintain aspect ratio */
+  transition: transform 0.3s ease-in-out; /* For smooth transformation */
+}
+
+.logo-img:hover {
+  transform: scale(1.1); /* Scales the image up to 110% when hovered */
+}
+/* content */
+h2.mb-3 {
+  color: black;
+  font-size: 80px;
+  font-weight: 200;
+}
+
+p.mb-5 {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+
+/* footer section */
+.p-4 {
+  justify-content: center;
+  align-items: center;
+}
+.p-3 {
+  background-image: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 1) 0%,
+    rgb(88, 28, 135) 50%,
+    rgb(88, 28, 135) 100%
+  );
+  background-position: left bottom;
+  transition: background 500ms, outline 500ms;
+  background-position: top left;
+  border-top: 1px solid rgb(88, 28, 135);
+}
+.radial-text-gradient {
+  position: relative;
+  padding-bottom: 0.5em;
+  background: radial-gradient(circle, #a2a2d0, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+}
+.btn-floating:hover {
+  transform: scale(1.1); /* Scales the button up to 110% when hovered */
+  transition: transform 0.3s ease-in-out; /* For smooth transformation */
+}
+
+
+

@@ -1,0 +1,8 @@
+Sources I used to help me finish finance:
+https://www.geeksforgeeks.org
+https://getbootstrap.com
+https://stackoverflow.com
+https://www.w3schools.com
+https://www.w3resource.com/index.php
+https://www.codingninjas.com/studio
+https://www.youtube.com/@TheCodex

@@ -1,0 +1,88 @@
+ <div class="section">
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Name</th>
+                            <th>Shares</th>
+                            <th>Price</th>
+                            <th>TOTAL</th>
+                        </tr>
+                          <tr>
+                        <td> Cash</td>
+                          </tr>
+                           <tr>
+                        <td> TOTAL</td>
+                          </tr>
+                    </thead>
+                    <tbody>
+                        <!--  Loop through the database entries to display them in this table -->
+
+                        {% for row in rows %}
+                        <tr>
+                            <td>{{ row.symbol }}</td>
+                            <td>{{ row.name }}</td>
+                            <td>{{ row.shares }}</td>
+                            <td>{{ row.price }}</td>
+                            <td>{{ row.total }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+ <form class="center">
+ <input type="text" id="symbol" name="symbol" placeholder="Symbol"><br><br>
+            <button type="submit">Log In</button>
+            </form>
+             <form class="center">
+ <input type="text" id="symbol" name="symbol" placeholder="Symbol"><br><br>
+  <input type="text" id="shares" name="shares" placeholder="Shares"><br><br>
+
+            <button type="submit">Log In</button>
+            </form>
+              <form class="center">
+ <input type="text" id="symbol" name="symbol" place="Symbol" scroll that contains the symbols of stocks u bouhgt><br><br>
+  <input type="text" id="shares" name="shares" place="Shares"><br><br>
+
+            <button type="submit">Log In</button>
+            </form>
+
+             <div class="section">
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Shares</th>
+                            <th>Price</th>
+                            <th>Transacted</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--  Loop through the database entries to display them in this table -->
+
+                        {% for row in rows %}
+                        <tr>
+                            <td>{{ row.symbol }}</td>
+                            <td>{{ row.shares }}</td>
+                            <td>{{ row.price }}</td>
+                            <td>{{ row.transacted }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        <form class="center">
+            <input type="text" id="name" name="name" placeholder="Username"><br><br>
+            <input type="text" id="password" name="password" placeholder="Password"><br><br>
+            <button type="submit">Log In</button>
+            </form>
+
+  CREAT TABLE account(
+    user_id INTEGER NOT NULL,
+    shares INTEGER NOT NULL,
+    symbol TEXT NOT NULL,
+    price NUMERIC NOT NULL
+    transacted DATETIME DEFAULT CURRENT_TIMESTAMP
+    FOREIGN KEY (user_id) REFERENCES users(id)
+  )

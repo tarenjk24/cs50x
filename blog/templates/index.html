@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+{% block main %}
+
+<link rel="stylesheet" type="text/css" href="/static/hero.css">
+
+<div class="header">
+  <h1 class="radial-text-gradient"> welcome TO MY WORLD</h1>
+  <h2>Discover My content</h2>
+</div>
+
+<div class="grid ">
+
+  <div class="item" tabindex="1">
+    <div class="box" data-toggle="tooltip" title="youtube">
+      <div class="overlay">
+        <div class=“description”> <h3>Culture and Life Podcast</h3>
+          <p>Welcome to my Culture and Life Podcast!
+            In this series, we explore diverse human experiences, from ancient traditions to modern issues.
+             Join me a deeper understanding of what it means to be human.
+            Let’s broaden our horizons together! </p>
+           <a href="/youtube">Ready to explore? Check it out!</a>
+          </div>
+    </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="item" tabindex="2" id="newsletter">
+    <div class="box" data-toggle="tooltip" title="mail section">
+      <form action="{{ url_for('subscribe') }}" method="post">
+
+          <div class="mail">Get my newest updates!</div>
+          <div class="container">
+          <input type="text" placeholder="Email address"  name="mail" required>
+
+          <button class="btun btn-lg btn-primary btn-block" type="submit">Submit</button>
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="item" tabindex="3">
+    <div class="box" data-toggle="tooltip" title="My galerie">
+     <div class="overlay">
+      <div class=“description”>
+       <h3>My album</h3>
+       <p>A glimpse of my daily life!</p>
+       <a href="/galerie">Check it out!</a>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+
+
+  <div class="item" tabindex="4">
+    <div class="box" data-toggle="tooltip" title="My articles">
+      <div class="overlay">
+        <div class=“description”>
+         <h3>My Journal Entries</h3>
+         <p>A peek into my everyday adventures! </p>
+         <a href="/article">click here!</a>
+        </div>
+       </div>
+    </div>
+  </div>
+
+
+
+
+{% endblock %}
