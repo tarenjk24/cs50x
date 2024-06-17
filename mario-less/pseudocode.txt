@@ -1,0 +1,29 @@
+MARIO
+1.get an iput x (x<=8 x>=1) done
+if x= 1
+dot=0
+2.print # x times :
+ every time till reaches x
+ =#+1
+print:
+dots=x
+dots-1
+hashes
+each new line
+addin +1 everytime
+ for (int j = 0; j <= x; j++)
+     {
+
+       for (int d=x; d > j; d--)
+       {
+         //display dots.
+         printf(".");
+       }
+            for(int i=0; i <= j; j++)
+            {
+             //display #.
+             printf("#");
+             }
+    //going back to line.
+     printf("\n");
+     
