@@ -1,8 +1,10 @@
 # cs50x
+---
+
 <p align="center">
   <img src="certificate.png" alt="alt text">
 </p>
----
+
 ## Description
 cs50x coding activities.
 
