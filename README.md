@@ -1,0 +1,2 @@
+# cs50x
+cs50x coding activities.
