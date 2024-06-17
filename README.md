@@ -6,5 +6,7 @@
 cs50x coding activities.
 [Certificate]()
 ---
+
+
 [![Certificate](https://img.shields.io/badge/certificate-000000?style=for-the-badge&logo=pdf&logoColor=white)](CS50x.pdf)
 
