@@ -1,0 +1,3 @@
+1.According to sql4 I would characterize their audio aura as calm.
+2.A better way to calculate a user's audio aura is by selecting songs with high energy, valence, and danceability
+then campare them to low energy, valence, and danceability songs to decide based on that a user's aura.

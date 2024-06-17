@@ -1,0 +1,14 @@
+sort1 uses:
+bubble sort
+How do you know?:
+it was the fastest in sorting sorted files.
+
+sort2 uses:
+merge sort
+How do you know?:
+it was the fastest sorting random files.
+
+sort3 uses:
+selection sort
+How do you know?: 
+because it took the most time searching.
