@@ -4,6 +4,6 @@
 </p>
 ---
 cs50x coding activities.
-[View PDF](path/to/your/file.pdf)
+[Certificate](CS50x.pdf)
 ---
 
