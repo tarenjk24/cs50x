@@ -1,0 +1,225 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: black;
+    background-color: whitesmoke;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        --glow-hue: 222deg;
+      --shadow-hue: 180deg;
+      --spring-easing: linear(
+      0, 0.002, 0.01 0.9%, 0.038 1.8%, 0.156, 0.312 5.8%, 0.789 11.1%, 1.015 14.2%,
+      1.096, 1.157, 1.199, 1.224 20.3%, 1.231, 1.231, 1.226, 1.214 24.6%,
+      1.176 26.9%, 1.057 32.6%, 1.007 35.5%, 0.984, 0.968, 0.956, 0.949 42%,
+      0.946 44.1%, 0.95 46.5%, 0.998 57.2%, 1.007, 1.011 63.3%, 1.012 68.3%,
+      0.998 84%, 1
+    );
+      --spring-duration: 1.33s;
+
+  }
+
+
+
+/* button*/
+
+/* CSS */
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+  /*global*/
+
+  body {
+     display: flex;
+      padding: 0;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  /*bouncing effects*/
+
+  .bouncing-blob {
+    width: 32vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform-origin: left top;
+  }
+
+  .bouncing-blob--blue {
+    background: #4783c7;
+  }
+
+  .bouncing-blob--white {
+    background: #ffffff;
+    z-index: 2;
+    width: 15vw;
+  }
+
+  .bouncing-blob--purple {
+    background: #8c8ff1;
+  }
+
+  .bouncing-blob--pink {
+    background: #e289cd50;
+  }
+
+  .bouncing-blobs-container {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bouncing-blobs-glass {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(140px);
+    -webkit-backdrop-filter: blur(140px);
+    pointer-events: none;
+  }
+
+  .bouncing-blobs {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*hero section*/
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 70px;
+    max-width: 800px;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #021123;
+  }
+
+  .hero p {
+    font-size: 24px;
+    max-width: 500px;
+    text-align: center;
+    color: #021123;
+  }
+
+
+  .mix{
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Add space between the buttons */
+    margin-top: 20px; /
+  }
+
+
+  /*responsive*/
+  @media (max-width: 1200px) {
+    .bouncing-blobs-glass {
+      backdrop-filter: blur(120px);
+      -webkit-backdrop-filter: blur(120px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .mix {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center;
+    }
+    .bouncing-blob {
+      width: 60vw;
+    }
+    .bouncing-blob--white {
+      width: 30vw;
+    }
+    .bouncing-blobs-glass {
+      backdrop-filter: blur(90px);
+      -webkit-backdrop-filter: blur(90px);
+    }
+
+    .hero h2 {
+      font-size: 32px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  }
+
+
+
